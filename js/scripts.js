@@ -16,24 +16,9 @@ function beep(input) {
 }
 
 
-
-
-
-//user interface logic
-// $(document).ready(function() {
-//   $("#form1").submit(function(event) {
-//     event.preventDefault();
-//     const input = parseInt($("#number").val());
-//     const nameInput = $("name").val();
-//     const specialmessage=
-    
-
-//   }
-// }
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     event.preventDefault();
-    $("#invalid-input-card").hide();
     const userName = $("#name").val();
     const userNum = $("#number").val();
     $("input[id=name]").val("");
@@ -42,3 +27,16 @@ $(document).ready(function() {
     if(userName==="" || output==="") {
       $("#conclusion").show();
     } else {
+      $("#humName").text(userName);
+      $("#speMes").text(output);
+      $("#form1").hide();
+      $("#compute").hide();
+      $("#submit2.0").hide();
+    }
+  });
+  $("submit2.0").click(function() {
+    $("#compute").show();
+    $("#submit2.0").show();
+    $("#form1").hide();
+  });
+});
