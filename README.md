@@ -56,12 +56,12 @@ Code: Beep("3")
 Expected Output: "0,1,Boop!,3,"
 
 
-Test#3: "It should replace the number 3 with "Won't you be my neighboor" and put it into the "new array"."
+Test#5: "It should replace the number 3 with "Won't you be my neighboor" and put it into the "new array"."
 Code: Beep("3")
 Expected Output: "0,1,2,Won't you be my neighbor?"
 
 
-Test#3: "It should replace the numbers all together inorder of most importance, the hierchy goes as follows. 3 is the most important being replaced with "Won't you be my neighbor?", then it is number 2 replaced by "Boop!", then 1 replaced by "Beep!"."
+Test#6: "It should replace the numbers all together inorder of most importance, the hierchy goes as follows. 3 is the most important being replaced with "Won't you be my neighbor?", then it is number 2 replaced by "Boop!", then 1 replaced by "Beep!"."
 Code: Beep("14")
 Expected Output: "0,Beep!,Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?, 14"
 
