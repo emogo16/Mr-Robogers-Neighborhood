@@ -2,3 +2,8 @@
   color: #fff;
   background-color: rgb(211, 136, 198);
   border-color: rgb(218, 129, 236);
+}
+
+.compute {
+  display: none;
+}

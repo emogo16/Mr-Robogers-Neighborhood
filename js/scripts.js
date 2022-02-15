@@ -24,19 +24,13 @@ $(document).ready(function() {
     $("input[id=name]").val("");
     $("input[id=number]").val("");
     const output = beep(userNum);
-    if(userName==="" || output==="") {
-      $("#conclusion").show();
-    } else {
-      $("#humName").text(userName);
-      $("#speMes").text(output);
-      $("#form1").hide();
-      $("#compute").hide();
-      $("#submit2.0").hide();
-    }
+    $("#humName").text(userName);
+    $("#speMes").text(output);
+    $(".compute").show();
+    $("form1").hide();
   });
-  $("submit2.0").click(function() {
-    $("#compute").show();
-    $("#submit2.0").show();
-    $("#form1").hide();
-  });
+  $("#submitTwo").click(function() {
+    $("form").show();
+    $(".compute").hide();
+  })
 });
